@@ -3,7 +3,7 @@ import React from 'react'
 export default function NewBook() {
     return (
         <div>
-            <h2>New Book</h2>
+            <h1>New Book</h1>
         </div>
     )
 }

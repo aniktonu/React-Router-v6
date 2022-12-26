@@ -1,12 +1,18 @@
+
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { useOutletContext, useParams } from 'react-router-dom'
 
 export default function Book() {
 
-    const { id } = useParams();
+
+    const { id } = useParams()
+    const obj = useOutletContext()
+
 
 
     return (
-        <div><h1>Books {id}</h1></div>
+        <>
+            <h1>This is book {id} {obj.hello} </h1>
+        </>
     )
 }
